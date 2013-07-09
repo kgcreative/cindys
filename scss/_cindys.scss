@@ -1,0 +1,548 @@
+#intro{
+	overflow:hidden;
+	display:block;
+	background-color:transparent;
+}
+
+#main{
+	margin: 0 auto;
+	padding: 0;
+	overflow:hidden;
+	display:block;
+}
+#logo {
+	@include transition (margin, width, height 1.0s ease-in-out);
+	display:block;
+	z-index: 500 !important;
+	background-image:url('../images/Cindys-Waterfront-Logo.png');
+	background-repeat:no-repeat;
+	background-attachment: scroll;
+	/* Set up proportionate scaling */
+	height: 14em;
+	width: 100%;
+	background-size: 16em auto;
+	text-align:center;
+	/* Set up positioning */
+	background-position: center;
+
+		@include breakpoint(480px)  {
+			margin-bottom:1em;margin-top:.5em;
+			background-size:18em auto;
+			height: 12em;
+		}
+
+		@include breakpoint(768px) {
+		}
+
+		@include breakpoint(1024px) {
+			height: 14em;
+		}
+
+		@include breakpoint(1280px) {
+			height: 16em;
+		}
+}
+
+#intro .header-left {
+	display:none;
+	background-image:url('../images/RW13-110.jpg');
+	background-repeat:no-repeat;
+	background-attachment: scroll;
+	/* Set up proportionate scaling */
+	width: 49.5%;
+	background-size:cover;
+	height: 10em;
+	
+	/* Set up positioning */
+	background-position: center;
+	float:left;
+
+		@include breakpoint(480px)  {
+			display:inline-block;
+			height: 15em;
+		}
+
+		@include breakpoint(768px) {
+			height:17em;
+			width:33%;
+		}
+
+
+		@include breakpoint(1024px) {
+			height: 20em;
+		}
+
+		@include breakpoint(1280px) {
+			height: 25em;
+		}
+	}
+
+#intro .header-middle {
+	display:none;
+	background-image:url('../images/CA13-006.jpg');
+	background-repeat:no-repeat;
+	background-attachment: scroll;
+	/* Set up proportionate scaling */
+	background-size:cover;
+	height: 15em;
+	
+	/* Set up positioning */
+	background-position: center;
+
+		@include breakpoint(480px)  {
+			height: 15em;
+			width: 49.5%;		
+		}
+
+		@include breakpoint(768px) {
+			display:inline-block;
+			width: 33%;
+			margin-left:.5%;
+			margin-right:.5%;
+			height: 17em;
+		}
+
+		@include breakpoint(1024px) {
+			height: 20em;
+		}
+
+		@include breakpoint(1280px) {
+			height: 25em;
+		}
+	}
+
+#intro .header-right {
+	display:inline-block;
+	background-image:url('../images/CA13-015.jpg');
+	background-repeat:no-repeat;
+	background-attachment: scroll;
+	/* Set up proportionate scaling */
+	width: 100%;
+	background-size:cover;
+	height: 15em;
+	
+	/* Set up positioning */
+	background-position: center;
+	float:right;
+
+		@include breakpoint(480px)  {
+			height: 15em;
+			width: 49.5%;
+			margin-left:1%;
+		}
+
+		@include breakpoint(768px) {
+			width: 33%;
+			height: 17em;
+			margin-left:0;
+			display:inline-block;
+		}
+
+		@include breakpoint(1024px) {
+			height: 20em;
+		}
+
+		@include breakpoint(1280px) {
+			height: 25em;
+		}
+	}
+
+
+#menu-teaser {
+	@include transition (margin, width, height 1.0s ease-in-out);
+	display:block;
+	background-image:url('../images/CA13-015.jpg');
+	background-repeat:no-repeat;
+	background-attachment: scroll;
+	/* Set up proportionate scaling */
+	width: 100%;
+	background-size:cover;
+	height: 15em;
+	
+	/* Set up positioning */
+	background-position: center;
+
+		@include breakpoint(480px)  {
+			height: 25em;
+			background-position: 10% center;
+		}
+
+		@include breakpoint(768px)  {
+			height: 30em;
+			background-position: bottom center;
+		}
+
+		@include breakpoint(1024px) {
+			height: 40em;
+		}
+
+		@include breakpoint(1280px) {
+			background-position: center;
+			height: 45em;
+		}
+	}
+
+#about_text {
+	display:block;
+	line-height:2em;
+	font-weight:500;
+
+	@include breakpoint(480px)  {
+		@include span-columns(6);
+		@include shift(1);
+		display:inline-block;
+		height:100%;
+		vertical-align: middle;
+	}
+	@include breakpoint(768px)  {
+		font-size:1.1em;
+
+	}
+	@include breakpoint(1024px) {
+		font-size:1.2em;
+	}
+	@include breakpoint(1280px) {
+		font-size:1.5em;
+	}
+}
+
+#hours {
+	display:block;
+	border-radius:1em;
+	padding:1em;
+	border:none;
+	display:inline-block;
+	vertical-align: middle;
+	background-color:#00264b;
+	color:#fff;
+	width:100%;
+	text-align:center;
+
+	@include breakpoint(480px)  {
+		@include span-columns(4);
+		@include omega();
+	}
+}
+
+.menu_title {
+		display:block;
+		text-align:center;
+		font-weight:bold;
+
+	@include breakpoint(480px)  {
+		margin:2em 1em 1em 1em;
+	}
+	@include breakpoint(768px)  {
+		font-size:1.1em;
+
+	}
+	@include breakpoint(1024px) {
+		font-size:1.2em;
+	}
+	@include breakpoint(1280px) {
+		font-size:1.5em;
+	}
+}
+.menu-background {
+	
+	overflow:hidden;
+	border-radius:1em;
+	@include breakpoint(480px) {
+	background-color:#fff;
+	padding:2em;
+
+	}
+}
+
+.header-underline {
+border-bottom: 3px solid #bdb7a4;
+}
+
+.menu-container {
+	background-color:#fff;
+	@include breakpoint(480px) {
+		/* margin-top:-2em; */
+		background-color:transparent;
+	}
+	/* @include breakpoint(768px) {
+		margin-top:-3em;
+	}
+	@include breakpoint(1024px) {
+		margin-top:-4em;
+	}
+	@include breakpoint(1280px) {
+	margin-top:-5em;
+	} */
+}
+.menu_left {
+	display:block;
+	@include breakpoint(480px)  {
+		@include span-columns(10);
+		@include shift(1);
+	}
+
+	/* @include breakpoint(768px)  {
+		@include span-columns(8);
+		@include shift(2);
+	} */
+
+	@include breakpoint(1024px)  {
+		@include span-columns(6);
+		@include shift(0);
+	}
+
+	@include breakpoint(1280px) {
+	}
+}
+.menu_right {
+	display:block;
+
+	@include breakpoint(480px)  {
+		@include span-columns(10);
+		@include shift(1);
+	}
+
+	/* @include breakpoint(768px)  {
+		@include span-columns(8);
+		@include shift(2);
+	} */
+
+	@include breakpoint(1024px) {
+		@include span-columns(6);
+		@include shift(0);
+		@include omega();
+	}
+	@include breakpoint(1280px) {
+	}
+}
+
+.menu_span {
+	display:block;
+
+	@include breakpoint(480px)  {
+		@include span-columns(10);
+		@include shift(1);
+	}
+
+	@include breakpoint(1024px) {
+		@include span-columns(12);
+		@include shift(0);
+	}
+}
+
+ul.menu_items {
+	display: block;
+	list-style-type: none;
+	margin-before: 1em;
+	margin-after: 1em;
+	margin-start: 0;
+	margin-end: 0;
+	padding-start: 0;
+	padding:0;
+}
+ul.menu_items li {padding-top:.5em;border-bottom: 1px dotted #bdb7a4;padding-bottom:.5em;display:block;overflow:hidden;}
+.menu_item {display:inline-block; float: left; text-align:left;width:74%;}
+.menu_description {display:inline-block;font-size:.9em;font-style:italic;padding-left:.5em;width:99%;text-align:left;float:left;padding-right:20%;}
+.menu_price {display:inline-block; float: top-right; text-align:right; width:25%;vertical-align: top}
+
+.drink_item {display:inline-block; float: left; text-align:left;width:44%;}
+.drink_description {display:inline-block;font-size:.9em;font-style:italic;padding-left:.5em;width:99%;text-align:left;float:left;padding-right:20%;}
+.drink_price {display:inline-block; float: top-right; text-align:right; width:55%;vertical-align: top}
+
+.spacer {display:inline-block;height:1px; width:100%;margin:0;padding:0;float:left;}
+
+.sustainable_image {
+	display:block;
+	overflow:hidden;
+	background-image:url('../images/CA13-007.jpg');
+	background-repeat:no-repeat;
+	/* Set up proportionate scaling */
+	height: auto;
+	width:100%;
+	text-align:center;
+	border-radius:1em;
+	
+	/* Set up positioning */
+	background-attachment: scroll;
+	background-position: center top;
+	background-size: contain;
+
+		@include breakpoint(768px) {
+		background-size: 70% auto;
+		background-position: right 10%;
+		}
+
+		@include breakpoint(1024px) {
+		background-size: 60% auto;
+		background-position: right 7%;
+		}
+
+		@include breakpoint(1280px) {
+		background-position: right 10%;
+		}
+}
+.sustainable_text {
+		display:block;
+		text-align:left;
+		background-color:#fff;
+		margin-top:50%;
+		padding:1em 2em 2em 2em;
+		border-radius:0 0 1em 1em;
+
+	 @include breakpoint(768px)  {
+		@include span-columns(6);
+		border-radius:0;
+		margin-top:0;
+	}
+	@include breakpoint(1024px) {
+		height:17em;
+	}
+}
+
+.cindy {
+	display:block;
+	background-image:url('../images/cindy-garden-7.jpg');
+	overflow: hidden;
+	background-repeat:no-repeat;
+	/* Set up proportionate scaling */
+	height: auto;
+	width:100%;
+	text-align:center;
+	border-radius:1em;
+	
+	/* Set up positioning */
+	background-attachment: scroll;
+	background-position: center top;
+	background-size: contain;
+
+		@include breakpoint(480px) {
+		background-size: auto 120%;
+		}
+
+		@include breakpoint(768px) {
+		background-size: auto 130%;
+		background-position: -12% 10%;
+		}
+
+		@include breakpoint(1024px) {
+		background-size: auto 160%;
+		background-position: left 7%;
+		}
+
+		@include breakpoint(1280px) {
+		background-size: auto 170%;
+		background-position: left 5%;
+		}
+}
+
+.cindy_text {
+		display:block;
+		text-align:left;
+		background-color:#fff;
+		margin-top:50%;
+		padding:1em 2em 2em 2em;
+		border-radius:0 0 1em 1em;
+
+	 @include breakpoint(768px)  {
+		@include span-columns(6);
+		float:right;
+		border-radius:0;
+		margin-top:0;
+	}
+}
+
+.rounded {
+	border-radius:1em;
+}
+
+/* Retina graphics */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+	#menu, #globalnav .dd { background-size: cover; background: url(s/rwd-menu-sprite@2x.gif) 0 0 no-repeat; }
+	#globalnav .dd { background-position: 0 -42px }
+	#globalnav .dd.active { background-position: 0 -84px }
+}
+
+
+/* MBA social icons
+--------------------------------------------------------- */
+.icon-email,
+.icon-facebook,
+.icon-googleplus,
+.icon-instagram,
+.icon-pinterest,
+.icon-red_rover,
+.icon-tumblr,
+.icon-twitter,
+.icon-youtube,
+.icon-feedburner,
+.icon-itunes,
+.icon-pdf,
+.icon-zip {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	line-height: 20;
+	overflow: hidden;
+	background: url("/images/shared/social/icon-sprite.png") no-repeat }
+
+.icon-pdf {
+	width: 11px;
+	height: 10px;
+	margin-left: 0px;
+	float: none!important }
+.icon-pdf.rt {
+	margin-left: 8px }
+
+.icon-email         { background-position: 0 0 }
+.icon-facebook      { background-position: -42px 0 }
+.icon-googleplus    { background-position: -84px 0 }
+.icon-instagram	    { background-position: -462px 0 }
+.icon-pinterest     { background-position: -126px 0 }
+.icon-red_rover     { background-position: -504px 0 }
+.icon-tumblr        { background-position: -168px 0 }
+.icon-twitter       { background-position: -210px 0 }
+.icon-youtube       { background-position: -252px 0 }
+.icon-feedburner    { background-position: -294px 0px }
+.icon-itunes        { background-position: -336px 0px }
+.icon-pdf           { background-position: -378px 0px }
+.icon-zip           { background-position: -399px 0px }
+
+/* Retina support for MBA social icons */
+@media (min--moz-device-pixel-ratio: 2),
+	   (-o-min-device-pixel-ratio: 2/1),
+  	   (-webkit-min-device-pixel-ratio: 2),
+  	   (min-device-pixel-ratio: 2) {
+  .icon-email,
+  .icon-facebook,
+  .icon-googleplus,
+  .icon-instagram,
+  .icon-pinterest,
+  .icon-red_rover,
+  .icon-tumblr,
+  .icon-twitter,
+  .icon-youtube {
+  	background-size: 328px 53px }
+  .icon-email         { background-position: 0 -21px }
+  .icon-facebook      { background-position: -37px -21px }
+  .icon-googleplus    { background-position: -74px -21px }
+  .icon-instagram     { background-position: -259px -21px }
+  .icon-pinterest     { background-position: -111px -21px }
+  .icon-red_rover     { background-position: -296px -21px }
+  .icon-tumblr        { background-position: -148px -21px }
+  .icon-twitter       { background-position: -185px -21px }
+  .icon-youtube       { background-position: -222px -21px }
+}
+
+
+#social a, .social a { margin-right: 8px }
+#social a:hover, .social a:hover { opacity: .8 }
+@media only screen and (max-width : 479px) { #social a, .social a { margin-right: 2px }}
+
+/* Footer
+------------------------------------------------------------------ */
+#footer, .site-footer { margin: 35px 0 80px; font-size: 12px; text-align: center; color: #53626f; }
+.footerlinks a { display: inline-block; margin: 0 2px; color: #53626F; }
+.footerlinks a:hover { color: #E15A00 }
+.copyright { margin-bottom: 10px }

@@ -1,0 +1,50 @@
+// Variables
+// ------------------------------------------------------------
+
+
+// Colors
+
+$brand-blue           :     #2379cf;
+
+$black                :     #000;
+$light-black          :     #444;
+$dark-gray            :     #999;
+$gray                 :     #ccc;
+$light-gray           :     #ddd;
+$white-smoke          :     #eee;
+$white                :     #fff;
+
+$link-color           :     #2379cf;
+$link-hover-color     :     darken($link-color, 10%);
+
+$selection-color      :     #FF69B4;
+
+
+// Grid Settings
+
+$unit                 :     1em;
+
+$container-max-width  :     68.75em; // 68.75em = 1000px / 75em = 1200px
+
+
+// Dev Mode
+
+$dev-mode             :     true;
+
+
+
+// Silent classes
+// ------------------------------------------------------------
+
+%full-bleed {
+	padding: 0;
+}
+
+// If you want a container to span from edge to edge,
+// apply '%full-bleed;' like this:
+//
+//  .featured {
+//    .container {
+//      extend %full-bleed;
+//    }
+//  }

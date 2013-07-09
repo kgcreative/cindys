@@ -1,0 +1,59 @@
+html { 
+	font-size: 87.5%;
+	@include breakpoint(768px) { font-size: 100% }
+}
+
+body { 
+	font: 300 1em/1.5 "proxima-nova-1","proxima-nova-2",sans-serif;
+	background-color:transparent;
+	color: $light-black;
+	background-image:url('../images/paper-bg-dark.jpg');
+}
+
+.container {
+	@include outer-container;
+	max-width: $container-max-width;
+	padding: 0 $unit*1.5;
+	// @include transition (.3s);
+
+	@include media($container-max-width+$unit*4) {
+		padding: 0;
+	}
+	.extend {}
+}
+
+
+
+// ------------------------------------------------------------
+
+h1, .h1 {
+	font-size: golden-ratio(16px, 2);
+	line-height: 1.2;
+	margin: $unit/2 0;
+}
+
+// ------------------------------------------------------------
+// Neat grid using Omega Reset
+// ------------------------------------------------------------
+/*
+.thing {
+	@include breakpoint(480px)  {
+		@include span-columns(6);
+		@include omega(2n);
+	}
+	@include breakpoint(768px)  {
+		@include omega-reset(2n);
+		@include span-columns(4);
+		@include omega(3n);
+	}
+	@include breakpoint(1024px) {
+		@include omega-reset(3n);
+		@include span-columns(3);
+		@include omega(4n);		
+	}
+	@include breakpoint(1280px) {
+		@include omega-reset(4n);
+		@include span-columns(2);
+		@include omega(6n);	
+	}
+} */
